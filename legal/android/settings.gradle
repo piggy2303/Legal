@@ -1,0 +1,3 @@
+rootProject.name = 'legal'
+
+include ':app'
