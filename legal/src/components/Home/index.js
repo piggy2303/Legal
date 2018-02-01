@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { View, Text,  } from 'react-native';
+import { View, Text, TouchableOpacity,  } from 'react-native';
 
-class Home extends Component {
+ export default class Home extends Component {
   render() {
     return (
       <View>
-        <Text> Home </Text>
+        <TouchableOpacity onPress={() => {this.props.navigation.navigate('Home1',{thamso: 'hello'})}} >
+          <Text>sdf</Text>
+        </TouchableOpacity>
       </View>
     );
   }
 }
-
-export default Home;
